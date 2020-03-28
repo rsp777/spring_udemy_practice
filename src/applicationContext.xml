@@ -24,6 +24,11 @@
 		<constructor-arg ref = "myFortuneService"/>
     </bean>
     
+    <bean id="myCricketCoach" class="com.springtutorial.CricketCoach">
+    	<!-- Setter Dependency Injected -->
+    	<property name="fortuneService" ref="myFortuneService"/>
+    </bean>
+    
 	
 </beans>
 
